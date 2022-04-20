@@ -78,3 +78,8 @@ console.log('\nExplorers con "js" en su stack')
 const explorersContainJs = explorers.filter((explorer) => explorer.stack.includes('js'))
 explorersContainJs.forEach(explorer => console.log(explorer.name))
 //console.log(explorersContainJs)
+
+//5.-Busca el primer explorer que sea de la CDMX, usa FIND
+console.log('\nPrimer Explorer que sea de la CDMX')
+const explorerCDMX = explorers.find((explorer) => explorer.city = 'CDMX')
+console.log(explorerCDMX.name)
