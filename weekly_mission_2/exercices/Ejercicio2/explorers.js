@@ -63,4 +63,5 @@ const explorers = [
  console.log("Los explorers en la lista son:")
  explorers.forEach(explorer => console.log(explorer.name))
     
-
+//2.-Imprime el stack de cada explorer, usa FOR EACH
+explorers.forEach(explorer => console.log(`El stack de el ${explorer.name} es: ${explorer.stack}`))
