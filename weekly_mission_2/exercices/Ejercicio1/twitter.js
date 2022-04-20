@@ -13,3 +13,15 @@ const user = {
 }
 
 console.log(user.getFollowersAndFollowing())
+
+const trending_topic = {
+    topic: "Reforma energetica",
+    tweets: 12000,
+    location: "Mexico",
+    position: 1,
+    getGeneralInfo: function() {
+        return `The trending topic: ${this.topic} has ${this.tweets} tweets on ${this.location}`
+    }
+}
+
+console.log(trending_topic.getGeneralInfo())
