@@ -25,3 +25,15 @@ const trending_topic = {
 }
 
 console.log(trending_topic.getGeneralInfo())
+
+
+const hashtag = {
+    topic: "Entreteinment",
+    tittle: "Moonknight",
+    tweets: 23000,
+    getGeneralInfo: function(){
+        return `#${this.tittle} has ${this.tweets} tweets`
+    }
+}
+
+console.log(hashtag.getGeneralInfo())
