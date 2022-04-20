@@ -17,5 +17,25 @@ class Repo {
     }
 }
 
+class Issue {
+    constructor(title, repositoryNameAssociated, status, numberOfComments, labels, author, dateCreated, lastUpdate){
+        this.title = title
+        this.repositoryNameAssociated = repositoryNameAssociated
+        this.status = status
+        this.numberOfComments = numberOfComments
+        this.labels = labels
+        this.author = author
+        this.dateCreated = dateCreated
+        this.lastUpdate = lastUpdate
+    }
+    getTitleAndAuthor(){
+        return this.title + this.author
+      }
+    getGeneralInfo(){
+        return `This issue ${this.title} was created by ${this.author}`
+    }
+}
+
 const launchXBackend = new Repo("LaunchX", "Carlogilmar", "JavaScript", 100, 199, 299, 10, 10)
-console.log(launchXBackend)
+const issue = new Issue("Semana 2", "LaunchXBackend", "active", 23, "Live2", "MC", "17/04/2022", "2 days ago")
+console.log(issue)
