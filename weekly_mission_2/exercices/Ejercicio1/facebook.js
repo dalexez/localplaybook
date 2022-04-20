@@ -22,3 +22,18 @@ const post = {
     }
 }
 console.log(post.getLocation())
+
+const biography = {
+    name: "Daniel Espinoza",
+    profilePicture: "***.jpg",
+    coverPhoto: "vacaiones.jpg",
+    worksAt: "UMSNH",
+    birthday: "19 Julio",
+    phoneNumber: "92782",
+    friends: 568,
+    getFriends: function(){
+        return this.friends
+    }
+}
+
+console.log("Total friends: " + biography.getFriends())
