@@ -83,3 +83,7 @@ explorersContainJs.forEach(explorer => console.log(explorer.name))
 console.log('\nPrimer Explorer que sea de la CDMX')
 const explorerCDMX = explorers.find((explorer) => explorer.city = 'CDMX')
 console.log(explorerCDMX.name)
+
+//6.-Obtén la suma de todos los exercises_completed, usa REDUCE
+const exercisesComleted = explorers.reduce((preValue, currValue) => preValue + currValue.exercises_completed, 0)
+console.log(`\nEl total de ejercicios terminados por todos los explorers es: ${exercisesComleted}`)
