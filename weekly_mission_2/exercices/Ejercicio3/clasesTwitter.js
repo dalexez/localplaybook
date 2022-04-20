@@ -25,6 +25,18 @@ class Trending_Topic {
     }
 }
 
+class Hashtag {
+    constructor(topic, tittle, tweets){
+        this.topic = topic
+        this. tittle = tittle
+        this.tweets = tweets
+    }
+    getGeneralInfo(){
+        return `#${this.tittle} has ${this.tweets} tweets`
+    }
+}
+
 const user = new User("Daniel", "dalexez", "Mexico", 71, 69, 50, 32)
 const trendingTopic = new Trending_Topic("Reforma Energetica", 12000, "Mexico", 1)
+const hashtag = new Hashtag("Entreteinment", "Moonknight", 23000)
 console.log(trendingTopic)
