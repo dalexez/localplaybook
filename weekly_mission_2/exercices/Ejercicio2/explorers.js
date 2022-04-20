@@ -92,3 +92,6 @@ console.log(`\nEl total de ejercicios terminados por todos los explorers es: ${e
 const frontEnd = explorers.some(explorer => explorer.missions.frontend.exercisesFinished === true)
 console.log(`\nEl resultado es true de encontrar alguno o false si ninguno cumple: ${frontEnd}`)
 
+//8.-Obtén la validación si todos los explorers tienen la propiedad isFinished del onboarding como true. Usa EVERY.
+const onboardingFinished = explorers.every(explorer => explorer.missions.onboarding.isFinished === true )
+console.log(`\nEsta funcion regresa true si todos los explorers terminaron el onboarding: ${onboardingFinished}`)
