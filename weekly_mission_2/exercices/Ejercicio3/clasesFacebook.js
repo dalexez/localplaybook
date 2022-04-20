@@ -24,6 +24,23 @@ class Post {
     }
 }
 
+class Biography {
+    constructor(name, profilePicture, coverPhoto, worksAt, birthday, phoneNumber, friends){
+        this.name = name
+        this.profilePicture = profilePicture
+        this.coverPhoto = coverPhoto
+        this.worksAt = worksAt
+        this.birthday = birthday
+        this.phoneNumber = phoneNumber
+        this.friends = friends
+    }
+    getFriends(){
+        return this.friends
+    }
+}
+
 const user = new User("Daniel Espinoza", 568, "Morelia", "19 Julio", 4, "profile.jpg")
 const post = new Post("Public", "Hola estoy modelando con clases!", "Morelia", "Carlo")
-console.log(post)
+const biography = new Biography("Daniel Espinoza", "playa.jpg", "lago.jpg", "UMSNH", "19 Julio", "265633", 568)
+
+console.log(biography)
