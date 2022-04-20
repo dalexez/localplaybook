@@ -12,3 +12,16 @@ const profile = {
 }
 
 console.log(profile.getGeneralInfo())
+
+const travel = {
+    location: "Home",
+    destination: "Work",
+    modeUber: "UberX",
+    price: 67.76,
+    payment: "chash",
+    getDestination: function(){
+        return this.destination
+    }
+}
+
+console.log("The user's destination is: " + travel.getDestination())
