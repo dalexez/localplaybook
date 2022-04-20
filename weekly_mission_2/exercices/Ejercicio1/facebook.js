@@ -11,3 +11,14 @@ const user = {
 }
 
 console.log(user.getGeneralInfo())
+
+const post = {
+    privacy: "Public",
+    post: "Hola estoy modelando informacion!",
+    location: "Morelia",
+    tagFriends: "Carlo",
+    getLocation: function(){
+        return `Este post fue hecho en: ${this.location}`
+    }
+}
+console.log(post.getLocation())
